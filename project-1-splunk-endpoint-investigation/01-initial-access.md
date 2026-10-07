@@ -7,7 +7,7 @@
 ---
 
 ## 2. SPL Query
-To test this hypothesis, I executed the following search in Splunk to isolate activity for `HelpDesk_User`:
+To test this hypothesis, I executed the following search in Splunk to isolate logon activity for `HelpDesk_User`:
 
 ` ` `spl
 index=* (EventCode=4625 OR EventCode=4624) "HelpDesk_User" | sort _time | table _time, Source_Network_Address, EventCode, Account_Name, Account_Domain, Logon_Type, Logon_Process, Sub_Status
@@ -31,6 +31,7 @@ index=* (EventCode=4625 OR EventCode=4624) "HelpDesk_User" | sort _time | table 
 ---
 
 ## 5. Conclusion
-* **Verdict:** True Positive (Credential Compromise via SMB Brute Force).
+* **Verdict:** True Positive
+* **Framework Mapping:** MITRE ATT&CK T1110.003
 * **Severity:** High
 * **Action:** Contain target, disable account, change credentials.
