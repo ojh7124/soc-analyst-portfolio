@@ -1,4 +1,4 @@
-# Phase 1: Initial Access & Brute Force Investigation
+# Phase 1: Initial Access
 
 ## 1. Initial Assessment & Hypothesis
 * **What I was looking for:** Evidence of a brute force attack targeting a single local account on the windows endpoint.
