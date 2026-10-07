@@ -32,4 +32,5 @@ index=* (EventCode=4625 OR EventCode=4624) "HelpDesk_User" | sort _time | table 
 
 ## 5. Analyst Conclusion & Next Steps
 * **Verdict:** True Positive (Credential Compromise via SMB Brute Force).
-* **Next Steps:** Contain the target immediately (Isolate compromised machine from network + Reset password of compromised user account). Proceed to investigate post-compromise activity.
+* **Severity:** High
+* **Action:** Contain target, disable account, change credentials.
