@@ -4,7 +4,7 @@
 * **What I was looking for:** Evidence of a brute force attack targeting a single local account on the windows endpoint.
 * **Analyst Hypothesis:** If a brute-force attack occurred, I expect to see multiple rapid failed logon events (`4625`) originating from a single source IP, followed by a successful logon (`4624`) once the correct password was discovered.
 
---
+---
 
 ## 2. SIEM Investigation & SPL Query
 To test this hypothesis, I executed the following search in Splunk to isolate activity for `HelpDesk_User`:
