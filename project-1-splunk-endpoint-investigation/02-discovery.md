@@ -1,4 +1,4 @@
-# Phase 1: 
+# Phase 2: Discovery
 
 ## 1. Initial Assessment & Hypothesis
 * **What I was looking for:**
