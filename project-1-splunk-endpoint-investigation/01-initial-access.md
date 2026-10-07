@@ -32,6 +32,6 @@ index=* (EventCode=4625 OR EventCode=4624) "HelpDesk_User" | sort _time | table 
 
 ## 5. Conclusion
 * **Verdict:** True Positive
-* **Framework Mapping:** MITRE ATT&CK T1110.003
+* **Framework Mapping:** MITRE ATT&CK T1110
 * **Severity:** High
 * **Action:** Contain target, disable account, change credentials.
