@@ -8,7 +8,7 @@
 | **Attacker Host** | Kali Linux (192.168.71.x) |
 | **Assigned Analyst** | Oliver (SOC Analyst) |
 | **SIEM Platform** | Splunk Enterprise |
-| **Framework Mapping** | MITRE ATT&CK (T1110.003, T1059, T1033, T1053.005) |
+| **Framework Mapping** | MITRE ATT&CK (T1110, T1059, T1033, T1053.005) |
 
 ---
 
