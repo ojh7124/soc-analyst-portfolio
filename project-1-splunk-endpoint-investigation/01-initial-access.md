@@ -23,8 +23,8 @@ index=* (EventCode=4625 OR EventCode=4624) "HelpDesk_User" | sort _time | table 
 
 ## 4. Key Artifacts
 
-* **Target Account:** `HelpDesk_User` (Confirmed compromised local user).
-* **Source IP:** `192.168.71.1` (Attacker Kali Linux host).
+* **Target Account:** `HelpDesk_User`
+* **Source IP:** `192.168.71.1`
 * **EventCode Pattern:** 3x Event Code `4625` (Failed Logon) within a 4-second window, followed immediately at `17:55:35` by Event Code `4624` (Successful Logon).
 * **Logon Type:** `3` (Network Logon). This confirms the authentication occurred remotely over SMB (Port 445).
 
@@ -32,6 +32,6 @@ index=* (EventCode=4625 OR EventCode=4624) "HelpDesk_User" | sort _time | table 
 
 ## 5. Conclusion
 * **Verdict:** True Positive
-* **Framework Mapping:** MITRE ATT&CK T1110
 * **Severity:** High
-* **Action:** Contain target, disable account, change credentials.
+* **Framework Mapping:** MITRE ATT&CK T1110
+* **Summary:** Validated successful brute force attack against local account `HelpDesk_User` originating from IP `192.168.71.1` via SMB (Port 445).
