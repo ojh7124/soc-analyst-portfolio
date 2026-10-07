@@ -1,4 +1,4 @@
-# Phase 1: Initial Access & Brute Force Investigation
+# Phase 1: 
 
 ## 1. Initial Assessment & Hypothesis
 * **What I was looking for:**
