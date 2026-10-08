@@ -35,3 +35,11 @@ index=* (EventCode=4625 OR EventCode=4624) "HelpDesk_User" | sort _time | table 
 * **Severity:** High
 * **Framework Mapping:** MITRE ATT&CK T1110
 * **Summary:** Validated successful brute force attack against local account `HelpDesk_User` originating from IP `192.168.71.1` via SMB (Port 445).
+
+---
+  
+## 6. Containment
+* **Isolate Host:** Isolate `DESKTOP-TBSUDKQ` from the local network.
+* **Account Revocation:** Disable `HelpDesk_User` in Local Users and Groups.
+* **Session Termination:** Terminate all active connections adn interactive sessions initiated by `HelpDesk_User`.
+* **Reset Credentials:** Force an immediate password reset for `HelpDesk_User`.  
