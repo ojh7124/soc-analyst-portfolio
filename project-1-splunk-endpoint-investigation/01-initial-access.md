@@ -29,7 +29,7 @@ index=* (EventCode=4625 OR EventCode=4624) "HelpDesk_User" | sort _time | table 
 ## 4. Conclusion
 * **Verdict:** True Positive
 * **Severity:** High
-* **Framework Mapping:** MITRE ATT&CK T1110
+* **Framework Mapping:** MITRE ATT&CK T1110.001
 * **Summary:** Validated successful brute force attack against local account `HelpDesk_User` originating from IP `192.168.71.1` via SMB (Port 445).
 
 ---
