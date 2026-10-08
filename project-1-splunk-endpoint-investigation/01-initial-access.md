@@ -44,4 +44,7 @@ index=* (EventCode=4625 OR EventCode=4624) "HelpDesk_User" | sort _time | table 
   
 <img width="1006" height="200" alt="Screenshot (3)" src="https://github.com/user-attachments/assets/1779e8a3-24cf-4226-a36a-9dfe798b454c" />
 
-* **Reset Credentials:** Force an immediate password reset for `HelpDesk_User`.  
+* **Reset Credentials:** Force an immediate password reset for `HelpDesk_User`.
+
+<img width="1006" height="100" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/c9e2cfe1-9d6a-438c-89d8-2fbf758af3b3" />
+
