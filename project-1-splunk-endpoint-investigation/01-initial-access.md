@@ -9,7 +9,7 @@
 ## 2. SPL Query
 To test this hypothesis, I executed the following search in Splunk to isolate logon activity for `HelpDesk_User`:
 
-` ` `spl
+` ` `
 index=* (EventCode=4625 OR EventCode=4624) "HelpDesk_User" | sort _time | table _time, Source_Network_Address, EventCode, Account_Name, Account_Domain, Logon_Type, Logon_Process, Sub_Status
 ` ` `
 
