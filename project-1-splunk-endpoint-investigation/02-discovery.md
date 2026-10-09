@@ -22,7 +22,7 @@ index=* (EventCode=4688 OR EventCode=1)  Creator_Process_Name="C:\\Windows\\Syst
 * **Command Line:** `whoami /all` 
 * **Parent Process:** `C:\Windows\System32\cmd.exe`
 * **Execution Timestamp:** `2026-10-05 17:59:49` (~4 minutes post-compromise)
-* **Account Context:** `DESKTOP-TBSUDKQ$` (Note: Windows Event Code 4688 records the computer account as the Subject when processes are invoked within the compromised HelpDesk_User network session context).
+* **Account Context:** `DESKTOP-TBSUDKQ$` (Note: Windows Event Code 4688 records the computer account as the Subject when commands are executed within the compromised HelpDesk_User session context).
 
 ---
 
