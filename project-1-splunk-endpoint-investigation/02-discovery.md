@@ -18,15 +18,16 @@ index=* (EventCode=4688 OR EventCode=1)  Creator_Process_Name="C:\\Windows\\Syst
 
 ## 3. Key Artifacts & IOCs
 
-* **Target Account:**
-* **Source IP:** 
-* **EventCode Pattern:**
-* **Logon Type:**
+* **Executed Process:** `C:\Windows\System32\whoami.exe`
+* **Command Line:** `whoami /all` 
+* **Parent Process:** `C:\Windows\System32\cmd.exe`
+* **Execution Timestamp:** `2026-10-05 17:59:49` (~4 minutes post-compromise)
+* **Subject Account Context:** `DESKTOP-TBSUDKQ$` (Account_Domain: WORKGROUP)
 
 ---
 
 ## 4. Conclusion
-* **Verdict:** 
-* **Severity:**
-* **Framework Mapping:**
-* **Summary:**
+* **Verdict:** True Positive 
+* **Severity:** Medium 
+* **Framework Mapping:** MITRE ATT&CK T1033 (System Owner/User Discovery)
+* **Summary:** Confirmed adversary reconnaissance activity. Following successful authentication, the attacker spawned `whoami /all` via `cmd.exe` at `17:59:49` to enumerate account privlidges, group memberships, and SIDs on the endpoint.
