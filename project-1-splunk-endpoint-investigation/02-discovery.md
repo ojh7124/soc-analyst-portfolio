@@ -9,10 +9,10 @@
 ## 2. SPL Query
 
 ` ` `
-index=* (EventCode=4688 OR EventCode=1)  Creator_Process_Name="C:\\Windows\\System32\\cmd.exe" | sort _time  | table  _time, New_Process_Name, Process_Command_Line
+index=* (EventCode=4688 OR EventCode=1)  Creator_Process_Name="C:\\Windows\\System32\\cmd.exe" | sort _time  | table  _time, New_Process_Name, Process_Command_Line, EventCode, Account_Name, Account_Domain
 ` ` `
 
-
+<img width="1920" height="650" alt="Screenshot (6)" src="https://github.com/user-attachments/assets/c828ac1b-fb1b-4db9-8a01-189a51e57609" />
 
 ---
 
