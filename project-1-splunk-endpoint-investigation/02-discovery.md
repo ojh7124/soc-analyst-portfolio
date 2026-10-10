@@ -1,8 +1,8 @@
 # Phase 2: Discovery
 
 ## 1. Hypothesis
-* **What I was looking for:** Evidence of post-exploitation reconnaissance activity executed shortly after the initial breach via brute force at `(05/10/2026 17:55:35)`.
-* **Analyst Hypothesis:** I expect to see the command-line execution of built-in Windows enumeration tools `(e.g. whoami, net user, ipconfig)` spawned via `cmd.exe` to inspect privilege levels and system configuration.
+* **What I was looking for:** Evidence of post-exploitation reconnaissance activity executed shortly after the initial breach via brute force at (`05/10/2026 17:55:35`).
+* **Analyst Hypothesis:** I expect to see the command-line execution of built-in Windows enumeration tools (e.g. `whoami`, `net user`, `ipconfig`) spawned via `cmd.exe` to inspect privilege levels and system configuration.
 
 ---
 
