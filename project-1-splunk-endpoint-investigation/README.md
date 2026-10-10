@@ -1,5 +1,7 @@
 # Summary / Context
-This project simulates a full end-to-end incident response investigation based on a compromised Windows endpoint (`DESKTOP-TBSUDKQ`). It tracks an adversary from initial brute-force entry through local discovery, persistence establishment, defense evasion, and exfiltration using Splunk telemetry and native log artifacts.
+This project simulates a full end-to-end incident response investigation based on a compromised Windows endpoint (`DESKTOP-TBSUDKQ`).
+It tracks an adversary from initial brute-force entry through local discovery, persistence establishment, defense evasion, and exfiltration using Splunk telemetry and native log artifacts.
+Each phase includes detailed forensic analysis, verified containment steps to mitigate the impact, and actionable Splunk detection rules built specifically to catch the executed techniques observed during the investigation.
 
 ---
 
