@@ -3,7 +3,7 @@ This project simulates a full end-to-end incident response investigation based o
 
 ---
 
-# Incident Investigation Report: IR-2026-1005-01
+## Incident Investigation Report: IR-2026-1005-01
 
 | Metadata Field | Value |
 | :--- | :--- |
