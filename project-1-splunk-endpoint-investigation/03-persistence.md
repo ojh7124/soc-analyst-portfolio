@@ -29,7 +29,7 @@ index=* (EventCode=4688 OR EventCode=1)  Creator_Process_Name="C:\\Windows\\Syst
 ---
 
 ## 4. Conclusion
-* **Verdict:**
-* **Severity:** 
-* **Framework Mapping:**
-* **Summary:** 
+* **Verdict:** True Positive 
+* **Severity:** High 
+* **Framework Mapping:** MITRE ATT&CK T1053.005 (Scheduled Task/Job: Scheduled Task)
+* **Summary:** Confirmed adversary persistence mechanism. The attacker leveraged `schtasks.exe` via `cmd.exe` to create a recurring scheduled task named `PersistenceTask`, forcing the system to execute `calc.exe` daily at 09:00 AM under elevated `SYSTEM` privileges to maintain backdoored access.
