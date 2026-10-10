@@ -24,7 +24,7 @@ index=* (EventCode=4688 OR EventCode=1)  Creator_Process_Name="C:\\Windows\\Syst
 * **Payload Executed:** `calc.exe` (acting as a proof-of-concept payload / placeholder binary)
 * **Schedule/Trigger:** `daily` at `09:00 AM`
 * **Execution Context/Privileges:** `SYSTEM`
-* **Execution Timestamp:** `2026-10-05 18:02:31` (~7 minutes post-compromise)
+* **Execution Timestamp:** `2026-10-05 18:07:54` (~12 minutes post-compromise)
 
 ---
 
