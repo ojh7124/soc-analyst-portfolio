@@ -21,7 +21,7 @@ index=* (EventCode=4688 OR EventCode=1)  Creator_Process_Name="C:\\Windows\\Syst
 * **Executed Process:** `C:\Windows\System32\schtasks.exe`
 * **Command Line:** `schtasks  /create /tn PersistenceTask /tr calc.exe /sc daily /st 09:00 /ru SYSTEM /f`
 * **Task Name:** `PersistenceTask`
-* **Payload Executed:** `calc.exe`
+* **Payload Executed:** `calc.exe` (acting as a proof-of-concept payload / placeholder binary)
 * **Schedule/Trigger:** `daily` at `09:00 AM`
 * **Execution Context/Privileges:** `SYSTEM`
 * **Execution Timestamp:** `2026-10-05 18:02:31` (~7 minutes post-compromise)
