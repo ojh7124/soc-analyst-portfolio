@@ -12,17 +12,20 @@
 index=* (EventCode=4688 OR EventCode=1)  Creator_Process_Name="C:\\Windows\\System32\\cmd.exe" | sort _time  | table  _time, New_Process_Name, Process_Command_Line, EventCode, Account_Name, Account_Domain
 ` ` `
 
-<img width="1920" height="840" alt="Screenshot (7)" src="https://github.com/user-attachments/assets/5c63a5f0-f71a-4063-b132-c62bb6e01381" />
+<img width="1920" height="588" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/d744c654-e417-4a9b-9562-e09045a84402" />
 
 ---
 
 ## 3. Key Artifacts & IOCs
 
 * **Executed Process:** `C:\Windows\System32\schtasks.exe`
-* **Command Line:** 
-* **Parent Process:** 
-* **Execution Timestamp:** 
-* **Account Context:**
+* **Command Line:** `schtasks  /create /tn PersistenceTask /tr calc.exe /sc daily /st 09:00 /ru SYSTEM /f`
+* **Task Name:** `PersistenceTask`
+* **Payload Executed:** `calc.exe`
+* **Schedule/Trigger:** `daily` at `09:00 AM`
+* **Execution Context/Privileges:** `SYSTEM`
+* **Execution Timestamp:** `2026-10-05 18:02:31` (~7 minutes post-compromise)
+
 ---
 
 ## 4. Conclusion
