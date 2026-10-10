@@ -1,4 +1,4 @@
-# My SOC Analyst Portfolio
+# Hi, I'm Oliver
 
 Welcome to my SOC analyst portfolio. This is where I will document my hands-on cyber security projects that aim to replicate real-life SOC analyst work.
 
