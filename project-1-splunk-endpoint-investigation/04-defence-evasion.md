@@ -7,7 +7,9 @@
 ---
 
 ## 2. SPL Query
-
+index=* (EventCode=1102 OR (EventCode=4688 AND (Process_Command_Line="*wevtutil*" OR New_Process_Name="*wevtutil.exe*")))
+| sort _time 
+| table _time, host, EventCode, Account_Name, New_Process_Name, Process_Command_Line
 ` ` `
 index=* 
 ` ` `
