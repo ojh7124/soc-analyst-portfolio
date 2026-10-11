@@ -33,3 +33,21 @@ index=* (EventCode=4688 OR EventCode=1)  Creator_Process_Name="C:\\Windows\\Syst
 * **Severity:** High 
 * **Framework Mapping:** MITRE ATT&CK T1053.005 (Scheduled Task/Job: Scheduled Task)
 * **Summary:** Confirmed adversary persistence mechanism. The attacker leveraged `schtasks.exe` via `cmd.exe` to create a recurring scheduled task named `PersistenceTask`, forcing the system to execute `calc.exe` daily at 09:00 AM under elevated `SYSTEM` privileges to maintain backdoored access.
+
+---
+
+## 5. Containment
+
+* **Scheduled Task Disablement & Deletion:** Disabled and permanently removed the unauthorized scheduled task (`PersistenceTask`) created by the adversary to prevent recurring execution under elevated `SYSTEM` privileges.
+
+<img width="1006" height="120" alt="Screenshot (12)" src="https://github.com/user-attachments/assets/c9977079-d952-4371-9fe8-49983626e3dc" />
+
+* * **Task Verification:** Executed a query against the Windows Task Scheduler to confirm complete removal of the persistence mechanism.
+
+<img width="1006" height="102" alt="Screenshot (13)" src="https://github.com/user-attachments/assets/4239166d-3f8a-4398-9c9e-121c2bbc9bda" />
+
+* **Payload Neutralisation:** Removed associated executable artifacts from disk to prevent re-infection.
+
+<img width="1006" height="96" alt="Screenshot (14)" src="https://github.com/user-attachments/assets/876552a4-6c44-4120-9a3f-2214c8c45bc0" />
+
+
