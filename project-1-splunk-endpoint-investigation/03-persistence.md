@@ -42,7 +42,7 @@ index=* (EventCode=4688 OR EventCode=1)  Creator_Process_Name="C:\\Windows\\Syst
 
 <img width="1006" height="120" alt="Screenshot (12)" src="https://github.com/user-attachments/assets/c9977079-d952-4371-9fe8-49983626e3dc" />
 
-* * **Task Verification:** Executed a query against the Windows Task Scheduler to confirm complete removal of the persistence mechanism.
+* **Task Verification:** Executed a query against the Windows Task Scheduler to confirm complete removal of the persistence mechanism.
 
 <img width="1006" height="102" alt="Screenshot (13)" src="https://github.com/user-attachments/assets/4239166d-3f8a-4398-9c9e-121c2bbc9bda" />
 
