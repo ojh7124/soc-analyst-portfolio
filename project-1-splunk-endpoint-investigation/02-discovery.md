@@ -35,5 +35,5 @@ index=* (EventCode=4688 OR EventCode=1)  Creator_Process_Name="C:\\Windows\\Syst
 ---
 
 ## 5. Containment 
-* **Terminate Active Reconnaissance Shells**
-* **Isolate Host from Network**   
+* **Terminate Active Reconnaissance Shells:** Kill any active `cmd.exe` processes (such as those running `whoami /all`) on the endpoint .
+* **Isolate Host from Network:** Block all incoming and outgoing network traffic at the local OS firewall level to stop lateral movement.
