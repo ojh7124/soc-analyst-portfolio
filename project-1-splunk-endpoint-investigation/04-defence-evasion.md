@@ -20,23 +20,31 @@ index=* (EventCode=1102 OR (EventCode=4688 AND (Process_Command_Line="*wevtutil*
 
 ## 3. Key Artifacts & IOCs
 
-* **Target Account:** 
-* **Source IP:** 
-* **EventCode Pattern:** 
-* **Logon Type:**
+* **Executed Process:** `C:\Windows\System32\wevtutil.exe`
+* **Parent Process:** `C:\Windows\System32\cmd.exe`
+* **Parent Command Line:** `"cmd.exe" /F:ON /c wevtutil cl Security > \Windows\Temp\Y1fBZKkz 2>&1`
+* **Child Command Line:** `wevtutil cl Security`
+* **Event Codes Triggered:** 
+  * `4688` (Process Creation for `cmd.exe` and `wevtutil.exe`)
+  * `1102` (The Audit Log Was Cleared, generated under `SYSTEM`)
+* **Execution Timestamp:** `2026-10-07 19:53:46`
+* **Account Context:** `DESKTOP-TBSUDKQ$` (Executed on the endpoint)
+* **Temporary Output File Artifact:** `\Windows\Temp\Y1fBZKkz`
 
 ---
 
 ## 4. Conclusion
-* **Verdict:** 
-* **Severity:** 
-* **Framework Mapping:**
-* **Summary:** 
+
+* **Verdict:** True Positive
+* **Severity:** High
+* **Framework Mapping:** MITRE ATT&CK T1070.001 (Indicator Removal: Clear Windows Event Logs)
+* **Summary:** Confirmed defense evasion activity. The adversary executed `wevtutil cl Security` via `cmd.exe` at `19:53:46` to wipe the Windows Security event log channel and obscure prior malicious actions. The activity was corroborated by Event Code 1102 and command output redirection targeting `\Windows\Temp\`.
 
 ---
-  
+
 ## 5. Containment
-* **Isolate Host:**
-* **Account Revocation:** 
+
+* **Artifact Cleanup:** Permanently delete the temporary stdout/stderr redirection file created during log erasure.
+
 * **Session Termination:** 
 * **Reset Credentials:** 
