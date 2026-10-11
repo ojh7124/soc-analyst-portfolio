@@ -47,3 +47,4 @@ index=* (EventCode=1102 OR (EventCode=4688 AND (Process_Command_Line="*wevtutil*
 
 * **Artifact Cleanup:** Permanently delete the temporary stdout/stderr redirection file created during log erasure.
 
+<img width="1006" height="102" alt="Screenshot (16)" src="https://github.com/user-attachments/assets/95b8db67-cc9f-4afa-b41c-7df36f6dfc45" />
