@@ -47,8 +47,11 @@ index=* (EventCode=4688 OR EventCode=1) ("reg save" OR "HKLM" OR "SAM" OR "SYSTE
 ## 5. Containment
 
 * **Staged Artifact Deletion:** Remove both the exported SAM hive from the staging path and the temporary stdout/stderr redirection file.
-  
+
+<img width="1006" height="130" alt="Screenshot (19)" src="https://github.com/user-attachments/assets/50e5b876-0615-4f1c-8599-91de15502d0a" />
+
 * **Credential Remediation:** Mandatory password reset for all local user accounts on `DESKTOP-TBSUDKQ` (including `HelpDesk_User`) due to offline hash exposure.
+
+<img width="1006" height="108" alt="Screenshot (20)" src="https://github.com/user-attachments/assets/95683091-4a05-4b5a-82c8-c8153b55e5cc" />
   
 * **Host Remediation & Re-imaging** Since local SAM hashes were exposed, prepare host `DESKTOP-TBSUDKQ` for full reimaging and redeployement after final forensic log capture.
-
