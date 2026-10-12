@@ -40,7 +40,7 @@ index=* (EventCode=4688 OR EventCode=1) ("reg save" OR "HKLM" OR "SAM" OR "SYSTE
 * **Framework Mapping:**
   * MITRE ATT&CK T1003.002 (OS Credential Dumping: Security Account Manager)
   * MITRE ATT&CK T1074.001 (Data Staged: Local Data Staging)
-* **Summary:** Confirmed credential access and data staging. At 20:06:25, the adversary executed reg save HKLM\SAM via cmd.exe to export the local Security Account Manager hive into C:\Users\Public\system.hive. This allowed offline extraction of password hashes while outputting errors quietly to \Windows\Temp\KpnABZDV.
+* **Summary:** Confirmed credential access and data staging. At `20:06:25`, the adversary executed `reg save HKLM\SAM` via `cmd.exe` to export the local Security Account Manager hive into `C:\Users\Public\system.hive`. This allowed offline extraction of password hashes while outputting errors quietly to `\Windows\Temp\KpnABZDV`.
 
 ---
 
