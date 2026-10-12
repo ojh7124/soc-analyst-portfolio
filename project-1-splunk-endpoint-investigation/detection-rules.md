@@ -46,10 +46,13 @@ level: high
 tags:
   - attack.initial_access
   - attack.t1110.001
+```
 
-### Splunk SPL Rule  
+### Splunk SPL Rule
+```
 index=* (EventCode=4625 OR EventCode=4624) Logon_Type=3
 | stats count(eval(EventCode=4625)) as Failed_Logons, 
         count(eval(EventCode=4624)) as Successful_Logons 
         by Account_Name, Source_Network_Address
 | where Failed_Logons > 5 AND Successful_Logons > 0
+```
