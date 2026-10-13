@@ -1,10 +1,18 @@
 # Hi, I'm Oliver
 
-Welcome to my SOC analyst portfolio. This is where I will document my hands-on cyber security projects that aim to replicate real-life SOC analyst work.
+Welcome to my SOC analyst portfolio! This is repository documents my hands-on cybersecurity projects replicating real-life SOC analyst work.
 
 ---
 
-## About Myself
+## Portfolio
+* **[1. Splunk Endpoint Investigation](./splunk-endpoint-investigation/)**
+  * End-to-end forensic investigation  of host `DESKTOP-TBSUDKQ` tracking an attacker across 5 phases of the MITRE ATT&CK Framework.
+
+---
+
+## Connect With Me 
 * **Role:** Aspiring SOC Analyst
-* **Core Competencies:** SIEM Analysis (Splunk), Alert Triage, Incident Response, Log Analysis
-* **Certifications:** CompTIA Network+ and CompTIA Security+
+* **Skills:** SIEM, Log Analysis, Alert Triage, Incident Response
+* **Certifications:** CompTIA Network+, CompTIA Security+
+* **LinkedIn:**
+* **Email:** ojh7124@gmail.com
