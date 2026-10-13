@@ -5,7 +5,7 @@
 
 ---
 
-## Incident Investigation Report: IR-2026-1005-01
+## Incident Metadata: IR-2026-1005-01
 
 | Metadata Field | Value |
 | :--- | :--- |
