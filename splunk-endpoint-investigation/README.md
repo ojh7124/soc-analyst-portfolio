@@ -1,7 +1,7 @@
 # Summary / Context
 * This project simulates a full end-to-end incident response investigation based on a compromised Windows endpoint (`DESKTOP-TBSUDKQ`).
 * It tracks an adversary from `initial access` through local `discovery`, `persistence` establishment, `defence evasion`, `credential access` and `exfiltration` using Splunk telemetry and native log artifacts.
-* Each phase includes detailed forensic `analysis` and verified `containment` steps to mitigate the impact.
+* Each phase includes detailed forensic `analysis` and verified `containment` steps that align with NIST SP-800-61 (Incident Handling Lifecycle) to mitigate the impact.
 
 ---
 
