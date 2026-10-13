@@ -12,7 +12,7 @@
 index=* (EventCode=4625 OR EventCode=4624) "HelpDesk_User" | sort _time | table _time, Source_Network_Address, EventCode, Account_Name, Account_Domain, Logon_Type, Logon_Process, Sub_Status
 ` ` `
 
-<img width="1920" height="1026" alt="Screenshot (1)" src="https://github.com/user-attachments/assets/575305fe-d4b2-4e2e-9475-7c504db434ea" />
+<img width="1920" height="670" alt="Screenshot (1)" src="https://github.com/user-attachments/assets/034a5cbe-2cdc-438f-b154-45a380cae2ba" />
 
 ---
 
