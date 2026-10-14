@@ -32,4 +32,8 @@ index=* (EventCode=4625 OR EventCode=4624) Logon_Type=3
 **4. `| convert ctime(...) | eval ... | table ...`**: 
 * Converts raw UNIX timestamps into human-readable times, enriches the output with threat classification metadata, and formats the result into a clean SOC presentation table.
 
+<img width="1920" height="728" alt="Screenshot (21)" src="https://github.com/user-attachments/assets/3b468b53-60e5-4db6-b7dd-122f234523a5" />
+
 ---
+
+## Rule Deployment & Alert Configuration 
