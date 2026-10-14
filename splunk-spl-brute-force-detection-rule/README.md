@@ -10,23 +10,26 @@
 ```
 index=* (EventCode=4625 OR EventCode=4624) Logon_Type=3 
 | stats count(eval(EventCode=4625)) as Failed_Logons, 
-        count(eval(EventCode=4624)) as Successful_Logons 
+        count(eval(EventCode=4624)) as Successful_Logons,
+        earliest(_time) as First_Attempt,
+        latest(_time) as Last_Attempt
         by Account_Name, Source_Network_Address
-| where Failed_Logons > 5 AND Successful_Logons > 0
+| where Failed_Logons > 2 AND Successful_Logons > 0
+| convert ctime(First_Attempt) ctime(Last_Attempt)
 | eval Threat_Confidence="High", Incident_Type="SMB Brute Force Success"
-| table _time, Account_Name, Source_Network_Address, Failed_Logons, Successful_Logons, Threat_Confidence
+| table First_Attempt, Account_Name, Source_Network_Address, Failed_Logons, Successful_Logons, Threat_Confidence
 ```
 
-**1.** `index=* (EventCode=4625 OR EventCode=4624) Logon_Type=3`:
-   * Filters the search window specifically for network logon attempts that either failed or succeeded.
+**1. `index=* (EventCode=4625 OR EventCode=4624) Logon_Type=3`**: 
+* Filters the search window specifically for network logon attempts (common with SMB traffic) that either failed or succeeded.
 
-**2.** `| stats count(eval(...)) ... by Account_Name, Source_Network_Address`:
-   * Groups the events by the target user account and the attacker's source IP address, counting failures and successes separately.
+**2. `| stats count(eval(...)) ... by Account_Name, Source_Network_Address`**: 
+* Groups events by the target user account and source IP address while capturing earliest/latest timestamps, counting failures and successes separately.
 
-**3.** `| where Failed_Logons > 5 AND Successful_Logons > 0`:
-   * Filters out noise. It only triggers an alert if there were more than 5 failed attempts and at least 1 successful login from that same source/account pairing.
+**3. `| where Failed_Logons > 2 AND Successful_Logons > 0`**: 
+* Filters out noise. It only triggers an alert if there were more than 2 failed attempts followed by at least 1 successful login from that same source and account pairing.
 
-**4.** `| eval ... | table ...`:
-   * Enriches the output with clear metadata and formats it into a clean presentation table for the SOC analyst.
+**4. `| convert ctime(...) | eval ... | table ...`**: 
+* Converts raw UNIX timestamps into human-readable times, enriches the output with threat classification metadata, and formats the result into a clean SOC presentation table.
 
 ---
