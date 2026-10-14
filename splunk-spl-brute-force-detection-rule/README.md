@@ -27,7 +27,7 @@ index=* (EventCode=4625 OR EventCode=4624) Logon_Type=3
 * Groups events by the target user account and source IP address while capturing earliest/latest timestamps, counting failures and successes separately.
 
 **3. `| where Failed_Logons > 2 AND Successful_Logons > 0`**: 
-* Filters out noise. It only triggers an alert if there were more than 2 failed attempts followed by at least 1 successful login from that same source and account pairing.
+* Filters out noise. It only triggers an alert if there were more than 2 failed attempts followed by at least 1 successful logon from that same source and account pairing.
 
 **4. `| convert ctime(...) | eval ... | table ...`**: 
 * Converts raw UNIX timestamps into human-readable times, enriches the output with threat classification metadata, and formats the result into a clean SOC presentation table.
