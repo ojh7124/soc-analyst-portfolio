@@ -46,3 +46,6 @@ To transition this SPL query from a manual search into an automated detection ru
 * **Alert Actions:** 
   * Log event to an internal notable index / security dashboard.
   * (Optional in enterprise environments) Send webhook to SOAR or email notification to the SOC on-call rotation.
+
+<img width="1920" height="1030" alt="Screenshot (22)" src="https://github.com/user-attachments/assets/a4ca26ef-17c5-4918-96b0-38009075d219" />
+
