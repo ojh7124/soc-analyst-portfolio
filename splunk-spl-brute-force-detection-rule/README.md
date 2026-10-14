@@ -37,3 +37,12 @@ index=* (EventCode=4625 OR EventCode=4624) Logon_Type=3
 ---
 
 ## Rule Deployment & Alert Configuration 
+
+To transition this SPL query from a manual search into an automated detection rule, it was configured as a **Scheduled Alert** in Splunk Enterprise:
+
+* **Alert Name:** `Detect-SMB-Brute-Force-Success`
+* **Execution Schedule:** Run every 5 minutes (looking back over the last 5 minutes of data).
+* **Trigger Condition:** `Number of Results > 0` (Triggers if any source IP successfully logs in after multiple failures).
+* **Alert Actions:** 
+  * Log event to an internal notable index / security dashboard.
+  * (Optional in enterprise environments) Send webhook to SOAR or email notification to the SOC on-call rotation.
