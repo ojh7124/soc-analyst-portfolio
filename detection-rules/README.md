@@ -1,4 +1,4 @@
-# Detection Rule 1: Brute Force Attack
+# SPL Detection Rule: Brute Force Attack
 
 ## The Threat
 * **Identifying a brute-force attack:** A high volume of rapid failed logon events (Event ID `4625`) originating from a single source IP, followed by a successful logon (Event ID `4624`), indicates a brute force attack succeeded. Network logon (Logon Type `3`) means authentication to the system was over the network rather than through a local interactive session.
