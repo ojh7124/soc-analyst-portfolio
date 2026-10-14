@@ -20,13 +20,13 @@ index=* (EventCode=4625 OR EventCode=4624) Logon_Type=3
 **1.** `index=* (EventCode=4625 OR EventCode=4624) Logon_Type=3`:
    * Filters the search window specifically for network logon attempts that either failed or succeeded.
 
-2. `| stats count(eval(...)) ... by Account_Name, Source_Network_Address`:
+**2.** `| stats count(eval(...)) ... by Account_Name, Source_Network_Address`:
    * Groups the events by the target user account and the attacker's source IP address, counting failures and successes separately.
 
-3. `| where Failed_Logons > 5 AND Successful_Logons > 0`:
+**3.** `| where Failed_Logons > 5 AND Successful_Logons > 0`:
    * Filters out noise. It only triggers an alert if there were more than 5 failed attempts and at least 1 successful login from that same source/account pairing.
 
-4. `| eval ... | table ...`:
+**4.** `| eval ... | table ...`:
    * Enriches the output with clear metadata and formats it into a clean presentation table for the SOC analyst.
 
 ---
