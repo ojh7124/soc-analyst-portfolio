@@ -17,7 +17,7 @@ index=* (EventCode=4625 OR EventCode=4624) Logon_Type=3
 | table _time, Account_Name, Source_Network_Address, Failed_Logons, Successful_Logons, Threat_Confidence
 ```
 
-1. `index=* (EventCode=4625 OR EventCode=4624) Logon_Type=3`:
+**1.** `index=* (EventCode=4625 OR EventCode=4624) Logon_Type=3`:
    * Filters the search window specifically for network logon attempts that either failed or succeeded.
 
 2. `| stats count(eval(...)) ... by Account_Name, Source_Network_Address`:
