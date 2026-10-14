@@ -45,7 +45,6 @@ To transition this SPL query from a manual search into an automated detection ru
 * **Trigger Condition:** `Number of Results > 0` (Triggers if any source IP successfully logs in after multiple failed attempts).
 * **Alert Actions:** 
   * **Add to Triggered Alerts:** Logs fired detections directly to the Splunk *Triggered Alerts* dashboard for analyst triage.
-  * *(Enterprise Context)* Can be extended to send webhook notifications to SOAR platforms or email alerts to SOC analysts.
 
 <img width="1920" height="1030" alt="Screenshot (22)" src="https://github.com/user-attachments/assets/a4ca26ef-17c5-4918-96b0-38009075d219" />
 <img width="1920" height="390" alt="Screenshot (23)" src="https://github.com/user-attachments/assets/b1fdfe35-6434-4c95-bd6d-74615fa08fab" />
