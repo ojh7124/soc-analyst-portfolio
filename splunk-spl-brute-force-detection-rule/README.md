@@ -5,7 +5,7 @@
 
 ---
 
-## The Splunk SPL Query
+## The SPL Query
 
 ```
 index=* (EventCode=4625 OR EventCode=4624) Logon_Type=3 
