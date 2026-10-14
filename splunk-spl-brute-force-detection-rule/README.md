@@ -54,4 +54,9 @@ To transition this SPL query from a manual search into an automated detection ru
 
 ## Testing & Validation
 
+To test the detection rule, another SMB brute-force attack was executed from Kali Linux.
+The alert schedule was temporarily adjusted to a Cron schedule (* * * * *) so the background job would evaluate the logs immediately without waiting for the default hourly schedule.
+Below is the screenshot showing the successfully triggered High severity alert in the Splunk dashboard, confirming that the brute-force attack was automatically detected and escalated.
+
+<img width="1920" height="384" alt="Screenshot (24)" src="https://github.com/user-attachments/assets/f892e167-0cde-4e4c-a481-1afcfdbd5da0" />
 
