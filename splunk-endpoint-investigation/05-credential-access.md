@@ -31,20 +31,19 @@ index=* host="DESKTOP-TBSUDKQ" EventCode=4688 ("reg save" OR "HKLM\\SAM" OR "HKL
 * **Child Command Line:** `reg save HKLM\SAM C:\Users\Public\system.hive`
 * **Event Code Triggered:** `4688` (Process Creation)
 * **Execution Timestamp:** `2026-10-17 22:57:56`
-* **Account Context:** `HelpDesk_User` (Executed on host)
-* **Staged File Artifact:** `C:\Users\Public\system.hive` (Contains local account password hashes)
-* **Temporary Output File Artifact:** `\Windows\Temp\KpnABZDV` (Created by output redirection to hide console errors)
+* **Account Context:** `HelpDesk_User`
+* **Token Elevation Context:** `TokenElevationTypeDefault (1)` (Non-elevated user token)
 
 ---
 
 ## 4. Conclusion
 
-* **Verdict:** True Positive 
-* **Severity:** Critical
+* **Verdict:** True Positive (Attempted Post-Exploitation)
+* **Severity:** High
+* **Execution Status:** Failed / Blocked (`Access is denied` / Exit Code `0x5`)
 * **Framework Mapping:**
   * MITRE ATT&CK T1003.002 (OS Credential Dumping: Security Account Manager)
-  * MITRE ATT&CK T1074.001 (Data Staged: Local Data Staging)
-* **Summary:** Confirmed credential access and data staging. At `20:06:25`, the adversary executed `reg save HKLM\SAM` via `cmd.exe` to export the local Security Account Manager hive into `C:\Users\Public\system.hive`. This allowed offline extraction of password hashes while outputting errors quietly to `\Windows\Temp\KpnABZDV`.
+* **Summary:** Confirmed attempted credential access via remote WMI execution[cite: 3]. At `22:57:56`, the adversary attempted to execute `reg save HKLM\SAM` using the compromised `HelpDesk_User` account[cite: 3]. However, because the execution token lacked administrative elevation (`TokenElevationTypeDefault (1)`), host-based access controls successfully prevented the registry dump, resulting in an `Access is denied` error.
 
 ---
 
