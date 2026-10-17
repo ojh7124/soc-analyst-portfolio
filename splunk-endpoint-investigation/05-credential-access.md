@@ -3,7 +3,7 @@
 ## 1. Hypothesis
 
 * **What I was looking for:** Evidence of post-exploitation credential harvesting targeting local SAM registry hives via remote execution channels following defence evasion.
-* **Analyst Hypothesis:** If the adversary attempts to dump local account NTLM hashes, I expect to observe Windows process creation telemetry (Event Code `4688`) capturing command-line execution of `reg save` targeting `HLKM/SAM` via network managemnet protocols (T1003.002).
+* **Analyst Hypothesis:** If the adversary attempts to dump local account NTLM hashes, I expect to observe Windows process creation telemetry (Event Code `4688`) capturing command-line execution of `reg save` targeting `HLKM/SAM` via network management protocols (T1003.002).
 
 ---
 
