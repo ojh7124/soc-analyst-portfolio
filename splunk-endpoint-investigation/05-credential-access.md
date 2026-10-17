@@ -26,12 +26,12 @@ index=* host="DESKTOP-TBSUDKQ" EventCode=4688 ("reg save" OR "HKLM\\SAM" OR "HKL
 ## 3. Key Artifacts & IOCs
 
 * **Executed Process:** `C:\Windows\System32\reg.exe`
-* **Parent Process:** `C:\Windows\System32\cmd.exe`
-* **Parent Command Line:** `"cmd.exe" /T:fg /Q /C reg save HKLM\SAM C:\Users\Public\system.hive > \Windows\Temp\KpnABZDV 2>&1`
+* **Parent Process:** `C:\Windows\System32\wbem\WmiPrvSE.exe -> `C:\Windows\System32\cmd.exe`
+* **Parent Command Line:** `reg save HKLM\SAM C:\Users\Public\sam.hive`
 * **Child Command Line:** `reg save HKLM\SAM C:\Users\Public\system.hive`
 * **Event Code Triggered:** `4688` (Process Creation)
-* **Execution Timestamp:** `2026-10-07 20:06:25`
-* **Account Context:** `DESKTOP-TBSUDKQ$` (Executed on host)
+* **Execution Timestamp:** `2026-10-17 22:57:56`
+* **Account Context:** `HelpDesk_User` (Executed on host)
 * **Staged File Artifact:** `C:\Users\Public\system.hive` (Contains local account password hashes)
 * **Temporary Output File Artifact:** `\Windows\Temp\KpnABZDV` (Created by output redirection to hide console errors)
 
