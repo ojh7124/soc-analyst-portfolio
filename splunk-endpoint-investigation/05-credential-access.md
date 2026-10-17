@@ -26,9 +26,9 @@ index=* host="DESKTOP-TBSUDKQ" EventCode=4688 ("reg save" OR "HKLM\\SAM" OR "HKL
 ## 3. Key Artifacts & IOCs
 
 * **Executed Process:** `C:\Windows\System32\reg.exe`
-* **Parent Process:** `C:\Windows\System32\wbem\WmiPrvSE.exe ->  `C:\Windows\System32\cmd.exe`
-* **Parent Command Line:** `reg save HKLM\SAM C:\Users\Public\sam.hive`
-* **Child Command Line:** `reg save HKLM\SAM C:\Users\Public\system.hive`
+* **Parent Process:** `C:\Windows\System32\wbem\WmiPrvSE.exe` -> `C:\Windows\System32\cmd.exe`
+* **Parent Command Line:** `cmd.exe /Q /c reg save HKLM\SAM C:\Users\Public\sam.hive 1> \Windows\Temp\cNPOtp 2>&1`
+* **Child Command Line:** `reg save HKLM\SAM C:\Users\Public\sam.hive`
 * **Event Code Triggered:** `4688` (Process Creation)
 * **Execution Timestamp:** `2026-10-17 22:57:56`
 * **Account Context:** `HelpDesk_User`
@@ -43,7 +43,7 @@ index=* host="DESKTOP-TBSUDKQ" EventCode=4688 ("reg save" OR "HKLM\\SAM" OR "HKL
 * **Execution Status:** Failed / Blocked (`Access is denied` / Exit Code `0x5`)
 * **Framework Mapping:**
   * MITRE ATT&CK T1003.002 (OS Credential Dumping: Security Account Manager)
-* **Summary:** Confirmed attempted credential access via remote WMI execution[cite: 3]. At `22:57:56`, the adversary attempted to execute `reg save HKLM\SAM` using the compromised `HelpDesk_User` account[cite: 3]. However, because the execution token lacked administrative elevation (`TokenElevationTypeDefault (1)`), host-based access controls successfully prevented the registry dump, resulting in an `Access is denied` error.
+* **Summary:** Confirmed attempted credential access via remote WMI execution. At `22:57:56`, the adversary attempted to execute `reg save HKLM\SAM` using the compromised `HelpDesk_User` account. However, because the execution token lacked administrative elevation (`TokenElevationTypeDefault (1)`), host-based access controls successfully prevented the registry dump, resulting in an `Access is denied` error.
 
 ---
 
