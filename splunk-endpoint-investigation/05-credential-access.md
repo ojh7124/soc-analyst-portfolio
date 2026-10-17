@@ -1,9 +1,9 @@
-# Phase 5: Credential Access & Exfiltration
+# Phase 5: Credential Access
 
 ## 1. Hypothesis
 
-* **What I was looking for:** Evidence of the adversary dumping local credentials and staging sensitive system data for extraction following defense evasion.
-* **Analyst Hypothesis:** If the attacker attempts to steal credentials or stage data, I expect to see process activity related to SAM registry hive dumping (T1003.002) and file staging in temporary local directories (T1074.001).
+* **What I was looking for:** Evidence of the adversary dumping local credentials following defense evasion.
+* **Analyst Hypothesis:** If the attacker attempts to steal credentials, I expect to see process activity related to SAM registry hive dumping (T1003.002).
 
 ---
 
