@@ -26,7 +26,7 @@ index=* host="DESKTOP-TBSUDKQ" EventCode=4688 ("reg save" OR "HKLM\\SAM" OR "HKL
 ## 3. Key Artifacts & IOCs
 
 * **Executed Process:** `C:\Windows\System32\reg.exe`
-* **Parent Process:** `C:\Windows\System32\wbem\WmiPrvSE.exe -> `C:\Windows\System32\cmd.exe`
+* **Parent Process:** `C:\Windows\System32\wbem\WmiPrvSE.exe ->  `C:\Windows\System32\cmd.exe`
 * **Parent Command Line:** `reg save HKLM\SAM C:\Users\Public\sam.hive`
 * **Child Command Line:** `reg save HKLM\SAM C:\Users\Public\system.hive`
 * **Event Code Triggered:** `4688` (Process Creation)
