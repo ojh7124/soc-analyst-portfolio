@@ -10,9 +10,12 @@
 ## 2. SPL Query
 
 ` ` `
-index=* (EventCode=4688 OR EventCode=1) ("reg save" OR "HKLM" OR "SAM" OR "SYSTEM" OR "SECURITY" OR "*.zip" OR "*.rar" OR "*.tar" OR "compress")
-| sort _time
-| table _time, host, EventCode, Account_Name, New_Process_Name, Process_Command_Line
+index=* host="DESKTOP-TBSUDKQ" EventCode=4688 ("reg save" OR "HKLM\\SAM" OR "HKLM\\SYSTEM")
+| eval Process_Cmd=coalesce(Process_Command_Line, CommandLine)
+| eval Parent_Proc=coalesce(Creator_Process_Name, Parent_Process_Name)
+| eval Process_Name=coalesce(New_Process_Name, Process_Name)
+| table _time, host, Account_Name, Parent_Proc, Process_Name, Process_Cmd, Token_Elevation_Type
+| sort _time asc
 ` ` `
 
 <img width="1920" height="754" alt="Screenshot (27)" src="https://github.com/user-attachments/assets/8fa963c2-49c1-49a1-ae8a-57293ebd110a" />
