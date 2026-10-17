@@ -1,11 +1,11 @@
 # Splunk Detection Rule: Brute Force Attack
 
-## The Threat
+## 1. The Threat
 * **Identifying a brute-force attack:** A high volume of rapid failed logon events (Event ID `4625`) originating from a single source IP, followed by a successful logon (Event ID `4624`), indicates a brute force attack succeeded. Network logon (Logon Type `3`) means authentication to the system was over the network rather than through a local interactive session.
 
 ---
 
-## The SPL Query
+## 2. The SPL Query
 
 ```
 index=* (EventCode=4625 OR EventCode=4624) Logon_Type=3 
@@ -36,7 +36,7 @@ index=* (EventCode=4625 OR EventCode=4624) Logon_Type=3
 
 ---
 
-## Rule Deployment & Alert Configuration 
+## 3. Rule Deployment & Alert Configuration 
 
 To transition this SPL query from a manual search into an automated detection rule, it was configured as a **Scheduled Alert** in Splunk Enterprise:
 
@@ -51,7 +51,7 @@ To transition this SPL query from a manual search into an automated detection ru
 
 ---
 
-## Testing & Validation
+## 4. Testing & Validation
 
 To test the detection rule, another SMB brute-force attack was executed from Kali Linux.
 The alert schedule was temporarily adjusted to a Cron schedule (* * * * *) so the background job would evaluate the logs immediately without waiting for the default hourly schedule.
