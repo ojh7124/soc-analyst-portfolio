@@ -7,7 +7,7 @@
 * **Compromised Account:** `HelpDesk_User`
 * **Attacker IP:** `192.168.71.x` (Kali Linux)
 * **Status:** `Closed / Resolved`
-* **Overview:** 5-stage attack chain investigation covering initial brute-force through attempted credential access. Stage 5 (`reg save HKLM\SAM`) was **blocked** by host controls (`TokenElevationTypeDefault (1)` / `0x5 Access is Denied`).
+* **Overview:** 5-stage attack chain investigation covering initial brute-force through attempted credential access.
 
 ---
 
