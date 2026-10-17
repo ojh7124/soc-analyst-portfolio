@@ -55,7 +55,7 @@ index=* host="DESKTOP-TBSUDKQ" EventCode=4688 ("reg save" OR "HKLM\\SAM" OR "HKL
 
 * **Host Isolation:** Apply network isolation on `DESKTOP-TBSUDKQ` via host firewall to block lateral movement and C2 traffic while maintaining telemetry to Splunk.
 
-<img width="1006" height="472" alt="Screenshot (29)" src="https://github.com/user-attachments/assets/375f8a85-24d3-4968-9d34-22c0c5a6a6cb" />
+<img width="1006" height="224" alt="Screenshot (31)" src="https://github.com/user-attachments/assets/de45ccae-f05a-492b-8f01-2e14ae07d4d3" />
 
 * **Credential Invalidation:** Revoke all active tokens, Kerberos tickets, and cached credentials associated with `HelpDesk_User` across the environment.
 
