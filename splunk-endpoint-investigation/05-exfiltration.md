@@ -15,7 +15,8 @@ index=* (EventCode=4688 OR EventCode=1) ("reg save" OR "HKLM" OR "SAM" OR "SYSTE
 | table _time, host, EventCode, Account_Name, New_Process_Name, Process_Command_Line
 ` ` `
 
-<img width="1920" height="737" alt="Screenshot (18)" src="https://github.com/user-attachments/assets/2ad4d2b4-5d72-4a19-ba08-76495cb6a6e5" />
+<img width="1920" height="754" alt="Screenshot (27)" src="https://github.com/user-attachments/assets/8fa963c2-49c1-49a1-ae8a-57293ebd110a" />
+
 
 ---
 
