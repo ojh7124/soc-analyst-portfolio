@@ -26,6 +26,7 @@
 
 ## 3. Containment Actions (NIST SP 800-61)
 
-*(Screenshots and details coming tomorrow)*
+<img width="1920" height="894" alt="Screenshot (34)" src="https://github.com/user-attachments/assets/e6333a4f-3c50-4f4b-9d47-af75b70d6f10" />
+
 
 
