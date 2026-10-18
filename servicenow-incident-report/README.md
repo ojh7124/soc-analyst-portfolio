@@ -11,7 +11,7 @@
 
 ---
 
-## 2. Investigation & ServiceNow Analysis
+## 2. ServiceNow Analysis Report
 
 <img width="1920" height="968" alt="Screenshot (33)" src="https://github.com/user-attachments/assets/2d62029e-26d3-4e93-95f4-948e24f03bf4" />
 
@@ -24,7 +24,7 @@
 
 ---
 
-## 3. Containment Actions (NIST SP 800-61)
+## 3. ServiceNow Containment Report
 
 <img width="1920" height="894" alt="Screenshot (34)" src="https://github.com/user-attachments/assets/e6333a4f-3c50-4f4b-9d47-af75b70d6f10" />
 
