@@ -13,7 +13,7 @@
 
 ## 2. Investigation & ServiceNow Analysis
 
-<img width="1920" height="970" alt="Screenshot (32)" src="https://github.com/user-attachments/assets/6ff0efb8-89a2-45c3-9302-76ac7d113842" />
+<img width="1920" height="968" alt="Screenshot (33)" src="https://github.com/user-attachments/assets/2d62029e-26d3-4e93-95f4-948e24f03bf4" />
 
 ### Lifecycle Summary
 * **Phase 1 (Initial Access):** SMB Brute-Force against `HelpDesk_User`
