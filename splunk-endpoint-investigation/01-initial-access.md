@@ -34,7 +34,6 @@ index=* (EventCode=4625 OR EventCode=4624) "HelpDesk_User" | sort _time | table 
 ---
   
 ## 5. Containment
-* **Isolate Host:** Isolate `DESKTOP-TBSUDKQ` from the local network.
 * **Account Revocation:** Disable `HelpDesk_User`.
 
 <img width="1006" height="100" alt="Screenshot (4)" src="https://github.com/user-attachments/assets/06a7f5d4-03da-46f7-8028-35070b864b0e" />
@@ -46,4 +45,3 @@ index=* (EventCode=4625 OR EventCode=4624) "HelpDesk_User" | sort _time | table 
 * **Reset Credentials:** Force an immediate password reset for `HelpDesk_User`.
 
 <img width="1006" height="100" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/c9e2cfe1-9d6a-438c-89d8-2fbf758af3b3" />
-
