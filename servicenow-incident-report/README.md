@@ -15,13 +15,6 @@
 
 <img width="1920" height="968" alt="Screenshot (33)" src="https://github.com/user-attachments/assets/2d62029e-26d3-4e93-95f4-948e24f03bf4" />
 
-### Lifecycle Summary
-* **Phase 1 (Initial Access):** SMB Brute-Force against `HelpDesk_User`
-* **Phase 2 (Discovery):** `whoami /all` execution
-* **Phase 3 (Persistence):** Scheduled task creation (`PersistenceTask`)
-* **Phase 4 (Defense Evasion):** Security event log cleared (`wevtutil cl Security`)
-* **Phase 5 (Credential Access):** WMI execution of `reg save HKLM\SAM C:\Users\Public\sam.hive` (**Failed / Blocked**)
-
 ---
 
 ## 3. ServiceNow Containment Report
