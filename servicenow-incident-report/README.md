@@ -19,7 +19,4 @@
 
 ## 3. ServiceNow Containment Report
 
-<img width="1920" height="894" alt="Screenshot (34)" src="https://github.com/user-attachments/assets/e6333a4f-3c50-4f4b-9d47-af75b70d6f10" />
-
-
-
+<img width="1920" height="852" alt="Screenshot (35)" src="https://github.com/user-attachments/assets/9891e31a-d5d0-4838-821a-2f68112d26b8" />
