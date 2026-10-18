@@ -2,10 +2,10 @@
 
 ## 1. Executive Summary
 
-* **Ticket ID:** `SIR0010005` / `IR-2026-1005-01`
+* **Ticket ID:** `SIR0010001` / `IR-2026-1005-01`
 * **Target Endpoint:** `DESKTOP-TBSUDKQ` (`192.168.71.128`)
 * **Compromised Account:** `HelpDesk_User`
-* **Attacker IP:** `192.168.71.x` (Kali Linux)
+* **Attacker IP:** `192.168.71.1` (Kali Linux)
 * **Status:** `Closed / Resolved`
 * **Overview:** 5-stage attack chain investigation covering initial brute-force through attempted credential access.
 
