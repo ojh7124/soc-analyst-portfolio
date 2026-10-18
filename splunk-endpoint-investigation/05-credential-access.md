@@ -49,14 +49,6 @@ index=* host="DESKTOP-TBSUDKQ" EventCode=4688 ("reg save" OR "HKLM\\SAM" OR "HKL
 
 ## 5. Containment
 
-* **Account Disablement & Session Termination:** Immediately disable the compromised `HelpDesk_User` account in Active Directory / local SAM and terminate all active network SMB/WMI sessions initiated from the attacker IP.
-
-<img width="1007" height="284" alt="Screenshot (28)" src="https://github.com/user-attachments/assets/5475efac-32b0-429c-9a68-a5aa2f2f4637" />
-
-* **Host Isolation:** Apply network isolation on `DESKTOP-TBSUDKQ` via host firewall to block lateral movement and C2 traffic while maintaining telemetry to Splunk.
-
-<img width="1006" height="224" alt="Screenshot (31)" src="https://github.com/user-attachments/assets/de45ccae-f05a-492b-8f01-2e14ae07d4d3" />
-
 * **Credential Invalidation:** Revoke all active tokens, Kerberos tickets, and cached credentials associated with `HelpDesk_User` across the environment.
 
 <img width="1006" height="272" alt="Screenshot (30)" src="https://github.com/user-attachments/assets/e4501778-81de-49f9-bab0-ff9e3f0657dd" />
