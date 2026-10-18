@@ -12,7 +12,7 @@
 | **Ticket Status** | Closed / Contained |
 | **Severity Level** | High |
 | **Target Endpoint** | `DESKTOP-TBSUDKQ` (192.168.71.128) |
-| **Attacker Host** | Kali Linux (192.168.71.x) |
+| **Attacker Host** | Kali Linux (192.168.71.1) |
 | **Assigned Analyst** | Oliver (SOC Analyst) |
 | **SIEM Platform** | Splunk Enterprise |
 | **Framework Mapping** | MITRE ATT&CK (T1110.001, T1059, T1033, T1053.005, T1070.001, T1003.002)|
@@ -28,7 +28,7 @@
                |   +-----------------+     +-----------------+   |
                |   |   Kali Linux    |     |   Windows 11    |   |
                |   |  (Attacker VM)  |     |   (Target VM)   |   |
-               |   | 192.168.71.x    |     | 192.168.71.128  |   |
+               |   | 192.168.71.1    |     | 192.168.71.128  |   |
                |   +--------+--------+     +--------+--------+   |
                |            |                       |            |
                |            |                       |            |
