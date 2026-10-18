@@ -10,7 +10,7 @@ Welcome to my SOC analyst portfolio! This is repository documents my hands-on cy
 * **[2. Splunk Detection Rule](./splunk-detection-rule/)**
   * Developed, deployed, and validated a custom Splunk Scheduled Alert to automatically detect and log successful brute-force attacks.
 * **[3. ServiceNow Incident Report](./servicenow-incident-report/)**
-   * Incident analysis and containment reports using ServiceNow.
+   * Incident analysis and containment reports of the Splunk endpoint investigation in ServiceNow.
 ---
 
 ## Connect With Me 
