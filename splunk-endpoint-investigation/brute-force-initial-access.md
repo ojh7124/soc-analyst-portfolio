@@ -1,4 +1,4 @@
-# Investigation: Brute Force Initial Access
+# Investigation: Initial Access via Brute Force 
 
 ## Executive Summary
 This investigation analyzes a successful authentication attack targeting a local account (`HelpDesk_User`) over Server Message Block (SMB / Port 445). Telemetry reveals a sequence of rapid failed logon attempts immediately followed by a successful authentication event, indicating a successful credential brute-force attack.
@@ -30,6 +30,7 @@ index=* (EventCode=4625 OR EventCode=4624) "HelpDesk_User" | sort _time | table 
 ---
 
 ## 4. Conclusion
+
 * **Verdict:** True Positive
 * **Severity:** High
 * **Framework Mapping:** MITRE ATT&CK T1110.001 (Brute Force: Password Guessing)
@@ -38,6 +39,7 @@ index=* (EventCode=4625 OR EventCode=4624) "HelpDesk_User" | sort _time | table 
 ---
   
 ## 5. Containment
+
 * **Account Revocation:** Disable `HelpDesk_User`.
 
 <img width="1006" height="100" alt="Screenshot (4)" src="https://github.com/user-attachments/assets/06a7f5d4-03da-46f7-8028-35070b864b0e" />
