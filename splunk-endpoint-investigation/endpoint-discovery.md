@@ -34,7 +34,7 @@ index=* (EventCode=4688 OR EventCode=1)  Creator_Process_Name="C:\\Windows\\Syst
 * **Verdict:** True Positive 
 * **Severity:** Medium 
 * **Framework Mapping:** MITRE ATT&CK T1033 (System Owner/User Discovery)
-* **Summary:** Confirmed adversary reconnaissance activity. The attacker spawned `whoami /all` via `cmd.exe` at `17:59:49` to enumerate account privileges, group memberships, and SIDs on the endpoint.
+* **Summary:** Confirmed adversary discovery activity. The attacker spawned `whoami /all` via `cmd.exe` at `17:59:49` to enumerate account privileges, group memberships, and SIDs on the endpoint.
 
 ---
 
