@@ -8,7 +8,7 @@ Welcome to my SOC analyst portfolio! This repository documents my hands-on cyber
 * **[1. Splunk Endpoint Investigations](./splunk-endpoint-investigations/)**
   * 
 * **[2. Splunk Detection Rules](./splunk-detection-rules/)**
-  * Developed, deployed, and validated a custom Splunk Scheduled Alert to automatically detect and log successful attacks.
+  * Developed, deployed, and validated custom Splunk Scheduled Alerts to automatically detect and log successful attacks.
 
 ---
 
