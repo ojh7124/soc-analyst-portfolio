@@ -1,8 +1,12 @@
-# Phase 3: Persistence 
+# Investigation: Scheduled Task Persistence 
+
+## Executive Summary
+This investigation analyzes a persistence mechanism established on an endpoint (`DESKTOP-TBSUDKQ`). Telemetry reveals the creation of an unauthorized Windows Scheduled Task (`PersistenceTask`) leveraging native utility `schtasks.exe` via `cmd.exe`. The task was configured to execute a payload (`calc.exe`) daily at 09:00 AM under elevated `SYSTEM` privileges to maintain long-term access.
+
+--- 
 
 ## 1. Hypothesis
-* **What I was looking for:** Evidence of persistence mechanisms established by the adversary following successful compromise and reconnaissance.
-* **Analyst Hypothesis:** If the attacker intends to maintain long term-access to the Windows endpoint, I expect to see the creation of scheduled tasks (e.g. using `schtasks.exe`) or modification of registry run keys to ensure recurring execution of payloads.
+* If the attacker intends to maintain long term-access to the Windows endpoint, I expect to see the creation of scheduled tasks (e.g. using `schtasks.exe`) or modification of registry run keys to ensure recurring execution of payloads.
 
 ---
 
@@ -24,7 +28,7 @@ index=* (EventCode=4688 OR EventCode=1)  Creator_Process_Name="C:\\Windows\\Syst
 * **Payload Executed:** `calc.exe` (acting as a proof-of-concept payload / placeholder binary)
 * **Schedule/Trigger:** `daily` at `09:00 AM`
 * **Execution Context/Privileges:** `SYSTEM`
-* **Execution Timestamp:** `2026-10-05 18:07:54` (~12 minutes post-compromise)
+* **Execution Timestamp:** `2026-10-05 18:07:54`
 
 ---
 
