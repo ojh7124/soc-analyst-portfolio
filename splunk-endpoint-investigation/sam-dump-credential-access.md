@@ -1,9 +1,12 @@
-# Phase 5: Credential Access
+# Phase 5: Credential Access via SAM Registry Hive Dumping 
+
+## Executive Summary
+This investigation analyzes a post-exploitation credential harvesting attempt targeting local SAM registry hives on an endpoint (`DESKTOP-TBSUDKQ`). Telemetry captures the adversary attempting to use native administrative utilities (`reg.exe`) via remote execution channels to dump credential material, which was successfully blocked by host-based access controls.
+
+---
 
 ## 1. Hypothesis
-
-* **What I was looking for:** Evidence of post-exploitation credential harvesting targeting local SAM registry hives via remote execution channels following defence evasion.
-* **Analyst Hypothesis:** If the adversary attempts to dump local account NTLM hashes, I expect to observe Windows process creation telemetry (Event Code `4688`) capturing command-line execution of `reg save` targeting `HLKM/SAM` via network management protocols (T1003.002).
+* If the adversary attempts to dump local account NTLM hashes, I expect to observe Windows process creation telemetry (Event Code `4688`) capturing command-line execution of `reg save` targeting `HLKM/SAM` via network management protocols (T1003.002).
 
 ---
 
@@ -19,7 +22,6 @@ index=* host="DESKTOP-TBSUDKQ" EventCode=4688 ("reg save" OR "HKLM\\SAM" OR "HKL
 ` ` `
 
 <img width="1920" height="754" alt="Screenshot (27)" src="https://github.com/user-attachments/assets/8fa963c2-49c1-49a1-ae8a-57293ebd110a" />
-
 
 ---
 
