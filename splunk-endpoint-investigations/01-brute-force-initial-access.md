@@ -1,4 +1,4 @@
-# Investigation: Initial Access via Brute Force 
+# Investigation 01: Initial Access via Brute Force 
 
 ## Executive Summary
 This investigation analyzes a successful authentication attack targeting a local account (`HelpDesk_User`) over Server Message Block (SMB / Port 445). Telemetry reveals a sequence of rapid failed logon attempts immediately followed by a successful authentication event, indicating a successful credential brute-force attack.
