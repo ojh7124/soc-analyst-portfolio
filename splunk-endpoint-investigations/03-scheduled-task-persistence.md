@@ -1,4 +1,4 @@
-# Investigation: Persistence via Scheduled Task
+# Investigation 03: Persistence via Scheduled Task
 
 ## Executive Summary
 This investigation analyzes a persistence mechanism established on an endpoint (`DESKTOP-TBSUDKQ`). Telemetry reveals the creation of an unauthorized Windows Scheduled Task (`PersistenceTask`) leveraging native utility `schtasks.exe` via `cmd.exe`. The task was configured to execute a payload (`calc.exe`) daily at 09:00 AM under elevated `SYSTEM` privileges to maintain long-term access.
