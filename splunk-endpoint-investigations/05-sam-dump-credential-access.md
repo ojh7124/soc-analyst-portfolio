@@ -1,4 +1,4 @@
-# Phase 5: Credential Access via SAM Registry Hive Dumping 
+# Investigation 05: Credential Access via SAM Registry Hive Dumping 
 
 ## Executive Summary
 This investigation analyzes a post-exploitation credential harvesting attempt targeting local SAM registry hives on an endpoint (`DESKTOP-TBSUDKQ`). Telemetry captures the adversary attempting to use native administrative utilities (`reg.exe`) via remote execution channels to dump credential material, which was successfully blocked by host-based access controls.
