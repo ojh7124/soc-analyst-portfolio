@@ -1,8 +1,12 @@
 # Phase 1: Initial Access
 
+## Executive Summary
+This investigation analyzes a successful authentication attack targeting a local account (`HelpDesk_User`) over Server Message Block (SMB / Port 445). Telemetry reveals a sequence of rapid failed logon attempts immediately followed by a successful authentication event, indicating a successful credential brute-force attack.
+
+---
+
 ## 1. Hypothesis
-* **What I was looking for:** Evidence of a brute force attack targeting a single local account on the Windows endpoint.
-* **Analyst Hypothesis:** If a brute-force attack occurred, I expect to see multiple rapid failed logon events (`4625`) originating from a single source IP, followed by a successful logon (`4624`) once the correct password was discovered.
+* If a brute-force attack occurred, I expect to see multiple rapid failed logon events (`4625`) originating from a single source IP, followed by a successful logon (`4624`) once the correct password was discovered.
 
 ---
 
