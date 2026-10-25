@@ -1,7 +1,7 @@
 # Investigation: Endpoint Discovery
 
 ## Executive Summary
-This investigation analyzes post-exploitation reconnaissance activity originating from a compromised endpoint (`DESKTOP-TBSUDKQ`). Telemetry captures the execution of native Windows enumeration utilities (`whoami.exe`) spawned via the command processor (`cmd.exe`) to inspect security context, privileges, and system configurations.
+This investigation analyzes discovery activity originating from a compromised endpoint (`DESKTOP-TBSUDKQ`). Telemetry captures the execution of native Windows enumeration utilities (`whoami.exe`) spawned via the command processor (`cmd.exe`) to inspect security context, privileges, and system configurations.
 
 ---
 
