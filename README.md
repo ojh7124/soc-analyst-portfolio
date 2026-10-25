@@ -6,7 +6,7 @@ Welcome to my SOC analyst portfolio! This repository documents my hands-on cyber
 
 ## Portfolio
 * **[1. Splunk Endpoint Investigation](./splunk-endpoint-investigation/)**
-  * End-to-end forensic investigation of host `DESKTOP-TBSUDKQ` tracking an attacker across 5 phases of the MITRE ATT&CK Framework.
+  * 
 * **[2. Splunk Detection Rule](./splunk-detection-rule/)**
   * Developed, deployed, and validated a custom Splunk Scheduled Alert to automatically detect and log successful brute-force attacks.
 
