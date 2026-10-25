@@ -1,9 +1,13 @@
-# Phase 2: Discovery
+# Investigation: Endpoint Discovery & Reconnaissance 
+
+## Executive Summary
+This investigation analyzes post-exploitation reconnaissance activity originating from a compromised endpoint (`DESKTOP-TBSUDKQ`). Telemetry captures the execution of native Windows enumeration utilities (`whoami.exe`) spawned via the command processor (`cmd.exe`) to inspect security context, privileges, and system configurations.
+
+---
 
 ## 1. Hypothesis
-* **What I was looking for:** Evidence of post-exploitation reconnaissance activity.
-* **Analyst Hypothesis:** I expect to see the command-line execution of built-in Windows enumeration tools (e.g. `whoami`, `net user`, `ipconfig`) spawned via `cmd.exe` to inspect privilege levels and system configuration.
-
+* I expect to see the command-line execution of built-in Windows enumeration tools (e.g. `whoami`, `net user`, `ipconfig`) spawned via `cmd.exe` to inspect privilege levels and system configuration.
+  
 ---
 
 ## 2. SPL Query
@@ -21,7 +25,7 @@ index=* (EventCode=4688 OR EventCode=1)  Creator_Process_Name="C:\\Windows\\Syst
 * **Executed Process:** `C:\Windows\System32\whoami.exe`
 * **Command Line:** `whoami /all` 
 * **Parent Process:** `C:\Windows\System32\cmd.exe`
-* **Execution Timestamp:** `2026-10-05 17:59:49` (~4 minutes post-compromise)
+* **Execution Timestamp:** `2026-10-05 17:59:49`
 * **Account Context:** `DESKTOP-TBSUDKQ$` (Note: Windows Event Code 4688 records the computer account as the Subject when commands are executed within the compromised HelpDesk_User session context).
 
 ---
@@ -30,7 +34,7 @@ index=* (EventCode=4688 OR EventCode=1)  Creator_Process_Name="C:\\Windows\\Syst
 * **Verdict:** True Positive 
 * **Severity:** Medium 
 * **Framework Mapping:** MITRE ATT&CK T1033 (System Owner/User Discovery)
-* **Summary:** Confirmed adversary reconnaissance activity. Following successful authentication, the attacker spawned `whoami /all` via `cmd.exe` at `17:59:49` to enumerate account privileges, group memberships, and SIDs on the endpoint.
+* **Summary:** Confirmed adversary reconnaissance activity. The attacker spawned `whoami /all` via `cmd.exe` at `17:59:49` to enumerate account privileges, group memberships, and SIDs on the endpoint.
 
 ---
 
