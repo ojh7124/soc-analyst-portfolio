@@ -1,4 +1,4 @@
-# Phase 4: Defence Evasion via Event Log Clearing 
+# Investigation 04: Defence Evasion via Event Log Clearing 
 
 ## Executive Summary
 This investigation analyses defence evasion activity on an endpoint (`DESKTOP-TBSUDKQ`). Telemetry reveals the adversary executing native administrative utilities (`wevtutil.exe`) via `cmd.exe` to clear the Windows Security event log channel and impair defensive visibility.
