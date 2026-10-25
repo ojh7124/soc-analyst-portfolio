@@ -6,7 +6,7 @@ This investigation analyzes discovery activity originating from a compromised en
 ---
 
 ## 1. Hypothesis
-* I expect to see the command-line execution of built-in Windows enumeration tools (e.g. `whoami`, `net user`, `ipconfig`) spawned via `cmd.exe` to inspect privilege levels and system configuration.
+* If local discovery occurred, I expect to see the command-line execution of built-in Windows enumeration tools (e.g. `whoami`, `net user`, `ipconfig`) spawned via `cmd.exe` to inspect privilege levels and system configuration.
   
 ---
 
