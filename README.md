@@ -6,7 +6,7 @@ Welcome to my SOC analyst portfolio! This repository documents my hands-on cyber
 
 ## Portfolio
 * **[1. Splunk Endpoint Investigations](./splunk-endpoint-investigations/)**
-  * Conducted standalone incident investigations using Splunk, analysing endpoint telemetry, logging artifacts, and executing containment actions via Powershell.
+  * Conducted standalone incident investigations with Splunk to analyse endpoint telemetry for key artifacts, and execute containment actions via Powershell.
 * **[2. Splunk Detection Rules](./splunk-detection-rules/)**
   * Developed, deployed, and validated custom Splunk Scheduled Alerts to automatically detect and log successful attacks.
 
