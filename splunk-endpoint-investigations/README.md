@@ -1,7 +1,7 @@
 # Summary 
 
-* This directory contains standalone SOC investigations.
-* Each markdown file acts as an independent case study demonstrating practical threat hunting, artifact collection, log analysis (Splunk SPL), and incident containment.
+* This directory contains standalone SOC investigations using Splunk.
+* Each markdown file acts as an independent case study demonstrating practical threat hunting, log analysis (Splunk SPL), artifact collection, and incident containment.
 
 ---
 
