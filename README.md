@@ -14,7 +14,7 @@ Welcome to my SOC analyst portfolio! This repository documents my hands-on cyber
 
 ## Connect With Me 
 * **Role:** Aspiring SOC Analyst
-* **Skills:** SIEM, Log Analysis, Alert Triage, Incident Response
+* **Skills:** SIEM, Log Analysis, Alert Triage, Incident Response, Threat Hunting, Detection Engineering 
 * **Certifications:** CompTIA Network+, CompTIA Security+
 * **LinkedIn:** [View My Profile](https://www.linkedin.com/in/oliver-hughes-cyber)
 * **Email:** ojh7124@gmail.com
