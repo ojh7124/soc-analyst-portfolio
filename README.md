@@ -1,6 +1,6 @@
 # Hi, I'm Oliver
 
-Welcome to my SOC analyst portfolio! This repository documents my hands-on cybersecurity projects replicating real-life SOC analyst work.
+Welcome to my SOC Analyst portfolio! This repository documents my hands-on cybersecurity projects replicating real-life SOC Analyst work.
 
 ---
 
