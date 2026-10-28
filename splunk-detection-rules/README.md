@@ -1,6 +1,6 @@
 # Summary 
 
-* This directory contains individual detection rules using Splunk Query Language (SPL).
+* This directory contains individual detection rules using Splunk.
 * Each markdown file acts as an independent case study demonstrating detection engineering, rule deployment, alert configuration, and validation. 
 
 ---
