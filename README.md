@@ -8,7 +8,7 @@ Welcome to my SOC Analyst portfolio! This repository documents my hands-on cyber
 * **[1. Splunk Endpoint Investigations](./splunk-endpoint-investigations/)**
   * Conducted incident investigations using Splunk demonstrating threat hunting, log analysis, artifact collection, and incident containment.
 * **[2. Splunk Detection Rules](./splunk-detection-rules/)**
-  * Engineered, deployed, configured, and validated custom Splunk detection rules and alerts.
+  * Engineered, deployed, configured, and validated custom detection rules in Splunk.
 
 ---
 
