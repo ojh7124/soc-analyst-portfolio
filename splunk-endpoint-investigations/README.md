@@ -1,7 +1,7 @@
 # Summary 
 
 * This directory contains individual investigations using Splunk.
-* Each markdown file acts as an independent case study demonstrating practical threat hunting, log analysis, artifact collection, and incident containment.
+* Each markdown file acts as an independent case study demonstrating threat hunting, log analysis, artifact collection, and incident containment.
 
 ---
 
